@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LAB6 · Data Ingestion</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="LAB6 trang chủ"><span class="brand-icon">L6</span><span>Data Ingestion<small>WORKSPACE / CÁ NHÂN</small></span></a>
+    <div class="nav-label">KHÔNG GIAN LÀM VIỆC</div>
+    <nav aria-label="Điều hướng chính">
+      <button class="nav active" data-view="overview" aria-current="page"><span>01</span>Tổng quan</button>
+      <button class="nav" data-view="chunks"><span>02</span>Khám phá chunk</button>
+      <button class="nav" data-view="traces"><span>03</span>Truy xuất & bằng chứng</button>
+      <button class="nav" data-view="audit"><span>04</span>Đánh giá thủ công <b id="nav-count">0/90</b></button>
+    </nav>
+    <div class="sidebar-bottom"><span class="online-dot"></span> Chạy trên máy của bạn<p>Mai Văn Thanh<br>2A202603696 · L3A</p></div>
+  </aside>
+  <main>
+    <header><span>DAY 06 <i>/</i> DATA INGESTION ENGINEERING</span><span class="local-badge">LOCAL WORKSPACE</span></header>
+    <div id="status" class="status" role="status" aria-live="polite">Đang đọc kết quả…</div>
+    <section id="overview" class="view">
+      <div class="page-heading"><div><p class="eyebrow">TỪ TÀI LIỆU ĐẾN BẰNG CHỨNG</p><h1>Tổng quan thí nghiệm</h1><p class="muted">So sánh ba chiến lược trên cùng corpus, model và benchmark.</p></div><span class="run-state">● Đã chạy dev & test</span></div>
+      <div id="stats" class="stats"></div>
+      <div class="overview-grid"><article class="panel"><div class="panel-heading"><div><h2>Kết quả truy xuất</h2><p>Evidence Hit@3 · số câu có đủ bằng chứng trong top-3</p></div><select id="metric-split" aria-label="Tập dữ liệu kết quả"><option value="test">Test · 5 câu</option><option value="dev">Dev · 15 câu</option></select></div><div id="metric-bars"></div><p class="footnote">Chọn C từ dev. Tập test nhỏ chỉ minh họa cho tài liệu này.</p></article>
+      <article class="panel accent-panel"><p class="eyebrow">BƯỚC TIẾP THEO</p><h2>Hoàn thiện đánh giá</h2><p id="audit-description"></p><div class="progress-track"><div id="audit-progress"></div></div><p id="audit-count" class="progress-caption"></p><button class="primary" id="go-audit">Mở bảng chấm <span>↗</span></button></article></div>
+      <article class="panel"><div class="panel-heading"><div><h2>Cấu hình A / B / C</h2><p>Embedding đa ngữ 384 chiều · PostgreSQL + pgvector · cosine</p></div><span class="pill">API: 0 USD</span></div><div class="table-wrap"><table><thead><tr><th>Chiến lược</th><th>Chia chunk</th><th>Overlap</th><th>Filter</th><th>Chunk</th></tr></thead><tbody id="strategy-table"></tbody></table></div></article>
+    </section>
+    <section id="chunks" class="view" hidden><div class="page-heading"><div><p class="eyebrow">CORPUS EXPLORER</p><h1>Khám phá chunk</h1><p class="muted">Tìm nội dung, xem metadata và đối chiếu trang nguồn.</p></div></div><div class="toolbar"><label>Chiến lược<select id="chunk-strategy"><option>A</option><option>B</option><option>C</option></select></label><label class="grow">Tìm nội dung<input id="chunk-search" type="search" placeholder="Nhập từ khóa hoặc số trang…"></label><span id="chunk-count" class="muted"></span></div><div class="split-layout"><div id="chunk-list" class="record-list" aria-label="Danh sách chunk"></div><article id="chunk-detail" class="panel detail"></article></div></section>
+    <section id="traces" class="view" hidden><div class="page-heading"><div><p class="eyebrow">RETRIEVAL REVIEW</p><h1>Truy xuất & bằng chứng</h1><p class="muted">Đọc kết quả đã chạy, đáp án kỳ vọng và evidence đã đăng ký.</p></div></div><div class="toolbar"><label>Chiến lược<select id="trace-strategy"><option>A</option><option>B</option><option selected>C</option></select></label><label>Tập dữ liệu<select id="trace-split"><option value="test">Test</option><option value="dev">Dev</option></select></label><label class="grow">Câu hỏi<select id="trace-question"></select></label></div><article id="trace-detail"></article></section>
+    <section id="audit" class="view" hidden><div class="page-heading"><div><p class="eyebrow">HUMAN REVIEW</p><h1>Đánh giá thủ công</h1><p class="muted">Đọc nguồn, chọn nhãn, ghi lý do và lưu từng bản ghi.</p></div><button class="primary" id="sync-report" disabled>Đồng bộ báo cáo</button></div><div class="toolbar"><label>Tiêu chí<select id="audit-kind"><option value="coherence">Coherence · 30 mẫu</option><option value="metadata">Metadata · 45 mẫu</option><option value="grounding">Grounding · 15 mẫu</option></select></label><label>Chiến lược<select id="audit-strategy"><option>A</option><option>B</option><option>C</option></select></label><label class="grow">Bản ghi<select id="audit-record"></select></label><span id="audit-kind-count" class="pill"></span></div><p id="rubric" class="rubric"></p><div class="audit-layout"><article id="audit-evidence" class="panel detail"></article><form id="audit-form" class="panel form-panel"><h2>Nhãn của bạn</h2><label id="score-label">Điểm<select id="audit-score" required></select></label><label id="filter-label" hidden>Top-3 tuân thủ filter?<select id="audit-filter"><option value="">Chọn kết quả…</option><option value="true">Có</option><option value="false">Không</option></select></label><label>Người chấm<input id="reviewer" required maxlength="150" autocomplete="name" placeholder="Họ và tên"></label><label>Lý do<textarea id="reason" required rows="5" maxlength="5000" placeholder="Nêu chi tiết đủ/thiếu, điều kiện hoặc lỗi tìm thấy…"></textarea></label><button class="primary" type="submit" id="save-label">Lưu nhãn</button><div class="form-navigation"><button type="button" id="audit-prev" class="secondary">← Trước</button><button type="button" id="audit-next" class="secondary">Tiếp →</button></div><p class="footnote">Nhãn được lưu vào results/audit trên máy. Chấm đủ 90 mẫu để tổng hợp vào báo cáo.</p></form></div></section>
+    <footer>LAB6 / MAI VĂN THANH <span>Dữ liệu thí nghiệm đã lưu · UI hoạt động không cần Docker</span></footer>
+  </main>
+</body>
+</html>

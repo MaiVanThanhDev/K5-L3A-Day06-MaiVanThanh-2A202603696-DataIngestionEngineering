@@ -1,0 +1,50 @@
+[
+  {
+    "strategy": "A",
+    "chunk_count": 66,
+    "characters": 47130,
+    "length_min": 191,
+    "length_mean": 714.0909090909091,
+    "length_max": 900,
+    "embedding_seconds": 8.565584596999997,
+    "embedding_reused": false,
+    "upsert_twice_seconds": 0.6390435409998645,
+    "first_count": 66,
+    "reingest_count": 66,
+    "query_seconds": 0.3595653229999698,
+    "api_cost_usd": 0,
+    "cost_note": "Local CPU; electricity/hardware not priced"
+  },
+  {
+    "strategy": "B",
+    "chunk_count": 69,
+    "characters": 44008,
+    "length_min": 143,
+    "length_mean": 637.7971014492754,
+    "length_max": 899,
+    "embedding_seconds": 8.065794979000202,
+    "embedding_reused": false,
+    "upsert_twice_seconds": 0.24164911400021083,
+    "first_count": 69,
+    "reingest_count": 69,
+    "query_seconds": 0.5150046289995771,
+    "api_cost_usd": 0,
+    "cost_note": "Local CPU; electricity/hardware not priced"
+  },
+  {
+    "strategy": "C",
+    "chunk_count": 69,
+    "characters": 44008,
+    "length_min": 143,
+    "length_mean": 637.7971014492754,
+    "length_max": 899,
+    "embedding_seconds": 2.8999997994105797e-06,
+    "embedding_reused": true,
+    "upsert_twice_seconds": 0.31345161700028257,
+    "first_count": 69,
+    "reingest_count": 69,
+    "query_seconds": 0.33541251800033933,
+    "api_cost_usd": 0,
+    "cost_note": "Local CPU; electricity/hardware not priced"
+  }
+]

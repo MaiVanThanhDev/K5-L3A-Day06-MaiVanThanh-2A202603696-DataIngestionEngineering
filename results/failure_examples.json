@@ -1,0 +1,474 @@
+[
+  {
+    "split": "dev",
+    "question_id": "q12",
+    "traces": [
+      {
+        "question_id": "q12",
+        "split": "dev",
+        "question": "Trong Chương 2, các giá trị 14 ngày, 5 bản và 5.000 đồng/ngày có phải quy định chính thức của trường hoặc doanh nghiệp không?",
+        "expected_answer": "Không. Đây là tham số demo: thời hạn 14 ngày, tối đa 5 bản đang mượn, phạt 5.000 đồng/ngày; chưa được xác nhận là quy định chính thức.",
+        "gold": [
+          {
+            "source_id": "do-an-ca-nhan",
+            "page": 36,
+            "evidence_quote": "Cấu hình minh họa sử dụng thời hạn 14 ngày, tối đa 5 bản đang mượn và mức\nphạt 5.000 đồng mỗi ngày. Đây là tham số demo của chương trình, không phải quy\nđịnh đã được xác nhận của trường học hoặc doanh nghiệp. Ví dụ trả muộn 3 ngày s ẽ\nphát sinh 15.000 đ ồng phạt quá h ạn nếu áp dụng mức trên."
+          }
+        ],
+        "requested_filter": {
+          "category": "chuong_2"
+        },
+        "hits": [
+          {
+            "chunk_id": "2e5ea877b5fe98e114037a84ffc2b9e8511033a913e826586b22ed54374574cb",
+            "text": "ài khoản staff trong bảng là dữ liệu do bộ kiểm thử tự tạo, không phải tài\nkhoản yêu cầu người dùng đăng nhập trên giao diện demo.\n\n2.8.3 Kịch bản kiểm thử tính tiền phạt\nCông thức tính tiền phạt quá hạn được áp dụng như sau:\n\nTiền phạt quá hạn = Số ngày quá hạn × Mức phạt theo ngày\nNếu trả trước hạn hoặc đúng hạn, số ngày quá hạn được tính bằng 0. Mức phạt\n5.000 đ ồng/ngày dư ới đây là d ữ liệu kiểm thử.",
+            "score": 0.5282147149079711,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1218,
+              "chunking": "fixed",
+              "language": "vi",
+              "char_start": 810,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 43
+            },
+            "rank": 1,
+            "evidence_hit": false
+          },
+          {
+            "chunk_id": "20013984468d3e12e6697bf4e3abf161e913e49ccc90d254c8eececa6d11b26a",
+            "text": "xác nhận của trường học hoặc doanh nghiệp. Ví dụ trả muộn 3 ngày s ẽ\nphát sinh 15.000 đ ồng phạt quá h ạn nếu áp dụng mức trên.\nKhoản bồi thường có giá trị dương cần có lý do; sách được ghi nhận tình trạng\ntốt không được kèm khoản bồi thường. Chức năng thu phạt chỉ lưu người ghi nhận\nvà thời điểm thu, đồng thời ngăn ghi nhận lặp. Chương trình chưa thực hiện giao dịch\nqua ngân hàng hoặc cổng thanh toán trực tuyến.",
+            "score": 0.5266293065922898,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1227,
+              "chunking": "fixed",
+              "language": "vi",
+              "char_start": 811,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 36
+            },
+            "rank": 2,
+            "evidence_hit": false
+          },
+          {
+            "chunk_id": "5cefa4d3cd373d56024a8be4b23a3101ba7f70da64b3f9328a4f9dbc39b54c32",
+            "text": " Hạn trả không được trước ngày mượn; ngày trả thực tế không được trước ngày\nmượn.\n\n Một bản sách không đư ợc có hai lượt mượn đang hoạt động cùng lúc.\n\n Việc lưu phiếu mượn và cập nhật tình trạng bản sách phải bảo đảm đồng bộ;\nkhi có lỗi phải hủy toàn bộ thay đổi liên quan.\n\n Dữ liệu có lịch sử mượn – trả phải được bảo toàn để phục vụ tra cứu.\nc)Khả năng sử dụng\n\n Giao diện sử dụng tiếng Việt, tên chức năng rõ ràng và bố cục nhất quán.\n\n Các danh sách có chức năng tìm kiếm, lọc và phân trang.\n\n Thông báo lỗi nêu rõ nguyên nhân và hướng khắc phục.\n\n Các trường bắt buộc được đánh dấu để người dùng dễ nhận biết.\n\n Những thao tác quan trọng như khóa tài khoản hoặc xác nhận mượn – trả cần\ncó bước xác nhận phù hợp.\n\n2.3.7 Xây dựng biểu đồ phân tích và thiết kế.\na) Use Case Diagram: Mô tả các chức năng và mối liên hệ với ba nhóm người sử\ndụng.\n\nHình 2-1: Sơ đồ Use Case Diagram\nb)Sequen",
+            "score": 0.5156646883102933,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 900,
+              "chunking": "fixed",
+              "language": "vi",
+              "char_start": 0,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 23
+            },
+            "rank": 3,
+            "evidence_hit": false
+          }
+        ],
+        "hit1": false,
+        "hit3": false,
+        "strategy": "A",
+        "applied_filter": {}
+      },
+      {
+        "question_id": "q12",
+        "split": "dev",
+        "question": "Trong Chương 2, các giá trị 14 ngày, 5 bản và 5.000 đồng/ngày có phải quy định chính thức của trường hoặc doanh nghiệp không?",
+        "expected_answer": "Không. Đây là tham số demo: thời hạn 14 ngày, tối đa 5 bản đang mượn, phạt 5.000 đồng/ngày; chưa được xác nhận là quy định chính thức.",
+        "gold": [
+          {
+            "source_id": "do-an-ca-nhan",
+            "page": 36,
+            "evidence_quote": "Cấu hình minh họa sử dụng thời hạn 14 ngày, tối đa 5 bản đang mượn và mức\nphạt 5.000 đồng mỗi ngày. Đây là tham số demo của chương trình, không phải quy\nđịnh đã được xác nhận của trường học hoặc doanh nghiệp. Ví dụ trả muộn 3 ngày s ẽ\nphát sinh 15.000 đ ồng phạt quá h ạn nếu áp dụng mức trên."
+          }
+        ],
+        "requested_filter": {
+          "category": "chuong_2"
+        },
+        "hits": [
+          {
+            "chunk_id": "74a91fc46cae5b7641c65eb75dc60925082c8065571cf0d05cb506530d0cca5e",
+            "text": "Số ngày quá hạn bằng giá trị lớn hơn giữa 0 và số ngày từ hạn trả đến ngày trả\nthực tế. Tiền phạt quá hạn bằng số ngày quá hạn nhân mức phạt theo ngày; tổng phải\nthu bằng tiền phạt quá hạn cộng khoản bồi thường. Các phép tính dựa trên ngày lịch\nvà múi giờ cấu hình của ứng dụng.\nCấu hình minh họa sử dụng thời hạn 14 ngày, tối đa 5 bản đang mượn và mức\nphạt 5.000 đồng mỗi ngày. Đây là tham số demo của chương trình, không phải quy\nđịnh đã được xác nhận của trường học hoặc doanh nghiệp. Ví dụ trả muộn 3 ngày s ẽ\nphát sinh 15.000 đ ồng phạt quá h ạn nếu áp dụng mức trên.\nKhoản bồi thường có giá trị dương cần có lý do; sách được ghi nhận tình trạng\ntốt không được kèm khoản bồi thường. Chức năng thu phạt chỉ lưu người ghi nhận\nvà thời điểm thu, đồng thời ngăn ghi nhận lặp. Chương trình chưa thực hiện giao dịch\nqua ngân hàng hoặc cổng thanh toán trực tuyến.",
+            "score": 0.6951098285551415,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1227,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 366,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 36
+            },
+            "rank": 1,
+            "evidence_hit": true
+          },
+          {
+            "chunk_id": "f608704ae0002d21402fced492a479500fa97ec9e4e26916f976c2221990eef1",
+            "text": "Bảng 2-10: Kiểm thử đăng nhập, phiên làm việc và phân quyền.\nTài khoản staff trong bảng là dữ liệu do bộ kiểm thử tự tạo, không phải tài\nkhoản yêu cầu người dùng đăng nhập trên giao diện demo.\n\n2.8.3 Kịch bản kiểm thử tính tiền phạt\nCông thức tính tiền phạt quá hạn được áp dụng như sau:\n\nTiền phạt quá hạn = Số ngày quá hạn × Mức phạt theo ngày\nNếu trả trước hạn hoặc đúng hạn, số ngày quá hạn được tính bằng 0. Mức phạt\n5.000 đ ồng/ngày dư ới đây là d ữ liệu kiểm thử.",
+            "score": 0.5450190134537982,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1218,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 748,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 43
+            },
+            "rank": 2,
+            "evidence_hit": false
+          },
+          {
+            "chunk_id": "f69328f70b01ab562a5cc5071ac7a281ad1a9ff57c588e8e5fd98b56d1f1f8c7",
+            "text": " Lập phiếu mượn, ghi nhận trả sách và theo dõi quá hạn.\n\n Tra cứu sách và lịch sử mượn – trả.\n\n Thống kê cơ bản phục vụ công tác quản lý.\nCác chức năng bán sách, thanh toán trực tuyến, đọc sách điện tử và quản lý\nnhiều chi nhánh chưa thuộc phạm vi phân tích của giai đoạn này.\n\n2.3.4 Xác định đối tượng sử dụng.\n\nĐối tượng Vai trò và nhu c ầu sử dụng\n\nQuản trị viên Quản lý tài khoản, phân quyền và xem thống kê hoạt\nđộng.\nThủ thư Quản lý sách, độc giả, lập phiếu mượn, xác nhận trả sách\nvà theo dõi quá hạn.\nĐộc giả Tra cứu sách, xem tình trạng sách và lịch sử mượn – trả\ncủa bản thân.\nBảng 2-2: Bảng vài trò của đối tượng.",
+            "score": 0.5304969062503814,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1501,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 874,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 21
+            },
+            "rank": 3,
+            "evidence_hit": false
+          }
+        ],
+        "hit1": true,
+        "hit3": true,
+        "strategy": "B",
+        "applied_filter": {}
+      },
+      {
+        "question_id": "q12",
+        "split": "dev",
+        "question": "Trong Chương 2, các giá trị 14 ngày, 5 bản và 5.000 đồng/ngày có phải quy định chính thức của trường hoặc doanh nghiệp không?",
+        "expected_answer": "Không. Đây là tham số demo: thời hạn 14 ngày, tối đa 5 bản đang mượn, phạt 5.000 đồng/ngày; chưa được xác nhận là quy định chính thức.",
+        "gold": [
+          {
+            "source_id": "do-an-ca-nhan",
+            "page": 36,
+            "evidence_quote": "Cấu hình minh họa sử dụng thời hạn 14 ngày, tối đa 5 bản đang mượn và mức\nphạt 5.000 đồng mỗi ngày. Đây là tham số demo của chương trình, không phải quy\nđịnh đã được xác nhận của trường học hoặc doanh nghiệp. Ví dụ trả muộn 3 ngày s ẽ\nphát sinh 15.000 đ ồng phạt quá h ạn nếu áp dụng mức trên."
+          }
+        ],
+        "requested_filter": {
+          "category": "chuong_2"
+        },
+        "hits": [
+          {
+            "chunk_id": "74a91fc46cae5b7641c65eb75dc60925082c8065571cf0d05cb506530d0cca5e",
+            "text": "Số ngày quá hạn bằng giá trị lớn hơn giữa 0 và số ngày từ hạn trả đến ngày trả\nthực tế. Tiền phạt quá hạn bằng số ngày quá hạn nhân mức phạt theo ngày; tổng phải\nthu bằng tiền phạt quá hạn cộng khoản bồi thường. Các phép tính dựa trên ngày lịch\nvà múi giờ cấu hình của ứng dụng.\nCấu hình minh họa sử dụng thời hạn 14 ngày, tối đa 5 bản đang mượn và mức\nphạt 5.000 đồng mỗi ngày. Đây là tham số demo của chương trình, không phải quy\nđịnh đã được xác nhận của trường học hoặc doanh nghiệp. Ví dụ trả muộn 3 ngày s ẽ\nphát sinh 15.000 đ ồng phạt quá h ạn nếu áp dụng mức trên.\nKhoản bồi thường có giá trị dương cần có lý do; sách được ghi nhận tình trạng\ntốt không được kèm khoản bồi thường. Chức năng thu phạt chỉ lưu người ghi nhận\nvà thời điểm thu, đồng thời ngăn ghi nhận lặp. Chương trình chưa thực hiện giao dịch\nqua ngân hàng hoặc cổng thanh toán trực tuyến.",
+            "score": 0.6951098285551415,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1227,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 366,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 36
+            },
+            "rank": 1,
+            "evidence_hit": true
+          },
+          {
+            "chunk_id": "f608704ae0002d21402fced492a479500fa97ec9e4e26916f976c2221990eef1",
+            "text": "Bảng 2-10: Kiểm thử đăng nhập, phiên làm việc và phân quyền.\nTài khoản staff trong bảng là dữ liệu do bộ kiểm thử tự tạo, không phải tài\nkhoản yêu cầu người dùng đăng nhập trên giao diện demo.\n\n2.8.3 Kịch bản kiểm thử tính tiền phạt\nCông thức tính tiền phạt quá hạn được áp dụng như sau:\n\nTiền phạt quá hạn = Số ngày quá hạn × Mức phạt theo ngày\nNếu trả trước hạn hoặc đúng hạn, số ngày quá hạn được tính bằng 0. Mức phạt\n5.000 đ ồng/ngày dư ới đây là d ữ liệu kiểm thử.",
+            "score": 0.5450190134537982,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1218,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 748,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 43
+            },
+            "rank": 2,
+            "evidence_hit": false
+          },
+          {
+            "chunk_id": "f69328f70b01ab562a5cc5071ac7a281ad1a9ff57c588e8e5fd98b56d1f1f8c7",
+            "text": " Lập phiếu mượn, ghi nhận trả sách và theo dõi quá hạn.\n\n Tra cứu sách và lịch sử mượn – trả.\n\n Thống kê cơ bản phục vụ công tác quản lý.\nCác chức năng bán sách, thanh toán trực tuyến, đọc sách điện tử và quản lý\nnhiều chi nhánh chưa thuộc phạm vi phân tích của giai đoạn này.\n\n2.3.4 Xác định đối tượng sử dụng.\n\nĐối tượng Vai trò và nhu c ầu sử dụng\n\nQuản trị viên Quản lý tài khoản, phân quyền và xem thống kê hoạt\nđộng.\nThủ thư Quản lý sách, độc giả, lập phiếu mượn, xác nhận trả sách\nvà theo dõi quá hạn.\nĐộc giả Tra cứu sách, xem tình trạng sách và lịch sử mượn – trả\ncủa bản thân.\nBảng 2-2: Bảng vài trò của đối tượng.",
+            "score": 0.5304969062503814,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1501,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 874,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 21
+            },
+            "rank": 3,
+            "evidence_hit": false
+          }
+        ],
+        "hit1": true,
+        "hit3": true,
+        "strategy": "C",
+        "applied_filter": {
+          "category": "chuong_2"
+        }
+      }
+    ]
+  },
+  {
+    "split": "test",
+    "question_id": "q16",
+    "traces": [
+      {
+        "question_id": "q16",
+        "split": "test",
+        "question": "Trong Chương 2, Mockito giả lập thành phần nào của LoanServiceTest và giúp tạo các tình huống gì mà không cần MySQL?",
+        "expected_answer": "Giả lập Repository để thử độc giả bị khóa, sách đang mượn hoặc khoản phạt đã thanh toán mà không cần kết nối MySQL.",
+        "gold": [
+          {
+            "source_id": "do-an-ca-nhan",
+            "page": 40,
+            "evidence_quote": "Mockito được sử dụng để giả lập các Repository trong nhóm ki ểm thử\nLoanServiceTest. Nh ờ đó, có th ể thiết lập những tình huống như độc giả bị khóa, sách\nđang được mượn hoặc khoản phạt đã thanh toán mà không cần kết nối MySQL."
+          }
+        ],
+        "requested_filter": {
+          "category": "chuong_2"
+        },
+        "hits": [
+          {
+            "chunk_id": "bb81296d5802aa956c2774210d00955962524ce671ae902c5c56462b762ce0c7",
+            "text": "m phân quy ền,\nCSRF, đăng nh ập, dữ liệu không hợp lệ và lịch sử cá nhân. Một phép kiểm tra truy\nvấn cho trang 10 đầu sách ghi nhận không quá 4 câu SQL trong điều kiện thử nghiệm\nđó.\nCác kiểm thử tích hợp hiện dùng H2, chưa thay thế được kiểm chứng trên\nMySQL. Tại thời điểm tổng hợp, nhật ký chạy trên máy Windows vẫn ghi nhận lỗi\nkết nối MySQL với thông báo Connection refused. Vì vậy, việc hoàn tất cấu hình\ncontainer, cổng kết nối và khởi động ứng dụng trên máy thực tế còn cần xác nhận;\nchưa có cơ sở kết luận đã triển khai thành công lên VPS.\n\n2.10 Khó khăn và hướng xử lý\n\nKhó khăn đầu tiên là môi trường Java không đồng nhất: CMD ngoài Windows\nnhận JDK 17 nhưng terminal của Visual Studio Code vẫn ưu tiên phiên bản khác.\nHướng xử lý là kiểm tra JAVA_HOME, PATH, cấu hình runtime và profile terminal;\nsau khi điều chỉnh cần mở terminal mới và kiểm tra lại Java cùng Maven.\nKhó khăn thứ hai là",
+            "score": 0.5713832708176214,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1710,
+              "chunking": "fixed",
+              "language": "vi",
+              "char_start": 810,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 49
+            },
+            "rank": 1,
+            "evidence_hit": false
+          },
+          {
+            "chunk_id": "102e07d1ea1968411c99a8ce8ccdb64a4436b6ce3e1573d986abdf36f372887f",
+            "text": " Kết quả kiểm thử tự động không thay th ế việc xác nh ận ứng dụng chạy thành\ncông trên môi trư ờng tri ển khai th ực tế.\nDo đó, trư ớc khi đưa h ệ thống vào sử dụng, cần hoàn thiện cấu hình MySQL\nvà thực hiện thêm các kịch bản kiểm thử trên môi trường gần với vận hành.\n\n2.9 Kết quả kiểm thử và tình tr ạng triển khai\n\nTheo t ệp TEST_RESULTS.md đi kèm mã ngu ồn, bộ kiểm thử đã ghi nh ận 25\ntrường hợp đạt, không có thất bại, lỗi hoặc bỏ qua. Kết quả gồm 6 kiểm thử tính phạt,\n8 kiểm thử LoanService, 10 kiểm thử API và 1 kiểm thử rollback. Đây là k ết quả của\nmôi trường kiểm thử trong gói mã nguồn, không đồng nghĩa ứng dụng đã khởi động\nthành công trên mọi máy.\n\nKiểm thử rollback xác nhận rằng khi bản sách thứ hai không thể cho mượn,\nthay đổi đối với bản thứ nhất không được giữ lại. Kiểm thử API bao g ồm phân quy ền,\nCSRF, đăng nh ập, dữ liệu không hợp lệ và lịch sử cá nhân. Một phép kiểm tr",
+            "score": 0.5414792666477604,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 900,
+              "chunking": "fixed",
+              "language": "vi",
+              "char_start": 0,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 49
+            },
+            "rank": 2,
+            "evidence_hit": false
+          },
+          {
+            "chunk_id": "f399a1d755a1eb68014f1918e22be72c747fcedba95eed48450894fd99ec9035",
+            "text": "Các nghiệp vụ mượn, trả và thu phạt được ưu tiên kiểm thử vì liên quan trực\ntiếp đến tính chính xác của dữ liệu. Một lỗi trong các chức năng này có thể khiến\ntrạng thái bản sách không khớp với phiếu mượn hoặc ghi nhận khoản phạt nhiều lần.\n\n2.7 Giới thi ệu công c ụ kiểm thử tự động\nĐể kiểm tra chương trình, project s ử dụng kết hợp kiểm thử đơn vị và kiểm\nthử tích hợp. Kiểm thử đơn vị tập trung vào từng quy tắc nghiệp vụ; kiểm thử tích\nhợp kiểm tra sự phối hợp giữa các thành phần của ứng dụng.\n\n2.7.1 Framework JUnit 5\nJUnit 5 được sử dụng để xây dựng và thực thi các phương thức kiểm thử tự\nđộng.\n\nTrong project, các phép kiểm tra được sử dụng gồm:\n\n assertEquals: đối chiếu kết quả thực tế với giá trị mong đợi.\n\n assertTrue: xác nhận một điều kiện phải đúng.\n\n assertNotNull: xác nhận đối tượng cần thiết đã được tạo.\n\n assertThrows: xác nhận chương trình phát sinh ngoại lệ đối với đầu v",
+            "score": 0.5336490337722446,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 900,
+              "chunking": "fixed",
+              "language": "vi",
+              "char_start": 0,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 40
+            },
+            "rank": 3,
+            "evidence_hit": false
+          }
+        ],
+        "hit1": false,
+        "hit3": false,
+        "strategy": "A",
+        "applied_filter": {}
+      },
+      {
+        "question_id": "q16",
+        "split": "test",
+        "question": "Trong Chương 2, Mockito giả lập thành phần nào của LoanServiceTest và giúp tạo các tình huống gì mà không cần MySQL?",
+        "expected_answer": "Giả lập Repository để thử độc giả bị khóa, sách đang mượn hoặc khoản phạt đã thanh toán mà không cần kết nối MySQL.",
+        "gold": [
+          {
+            "source_id": "do-an-ca-nhan",
+            "page": 40,
+            "evidence_quote": "Mockito được sử dụng để giả lập các Repository trong nhóm ki ểm thử\nLoanServiceTest. Nh ờ đó, có th ể thiết lập những tình huống như độc giả bị khóa, sách\nđang được mượn hoặc khoản phạt đã thanh toán mà không cần kết nối MySQL."
+          }
+        ],
+        "requested_filter": {
+          "category": "chuong_2"
+        },
+        "hits": [
+          {
+            "chunk_id": "5059b80d6ff7ec186cf3eca230f919abc58c95ade12bb4c27d5f6d8e385f8315",
+            "text": " Kết quả kiểm thử tự động không thay th ế việc xác nh ận ứng dụng chạy thành\ncông trên môi trư ờng tri ển khai th ực tế.\nDo đó, trư ớc khi đưa h ệ thống vào sử dụng, cần hoàn thiện cấu hình MySQL\nvà thực hiện thêm các kịch bản kiểm thử trên môi trường gần với vận hành.\n\n2.9 Kết quả kiểm thử và tình tr ạng triển khai\n\nTheo t ệp TEST_RESULTS.md đi kèm mã ngu ồn, bộ kiểm thử đã ghi nh ận 25\ntrường hợp đạt, không có thất bại, lỗi hoặc bỏ qua. Kết quả gồm 6 kiểm thử tính phạt,\n8 kiểm thử LoanService, 10 kiểm thử API và 1 kiểm thử rollback. Đây là k ết quả của\nmôi trường kiểm thử trong gói mã nguồn, không đồng nghĩa ứng dụng đã khởi động\nthành công trên mọi máy.",
+            "score": 0.5414792666477604,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 665,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 0,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 49
+            },
+            "rank": 1,
+            "evidence_hit": false
+          },
+          {
+            "chunk_id": "56f2b600191b45aa56dfaca693c3a92c8690c2c2bc8303495dde520a1b2aba4d",
+            "text": " assertThrows: xác nhận chương trình phát sinh ngoại lệ đối với đầu vào hoặc\nthao tác không hợp lệ.\nVí dụ, kiểm thử tính phạt xác nhận rằng trả chậm ba ngày với mức phạt 5.000\nđồng/ngày phải tạo ra khoản phạt 15.000 đồng.\n\n2.7.2 Thư viện Mockito\n\nMockito được sử dụng để giả lập các Repository trong nhóm ki ểm thử\nLoanServiceTest. Nh ờ đó, có th ể thiết lập những tình huống như độc giả bị khóa, sách\nđang được mượn hoặc khoản phạt đã thanh toán mà không cần kết nối MySQL.\nNgoài giả lập dữ liệu trả về, Mockito còn kiểm tra tương tác giữa Service và\nRepository. Chẳng hạn, khi bản sách không đủ điều kiện cho mượn, kiểm thử xác\nnhận phương thức lưu phiếu không được gọi.\n\n2.7.3 Spring Boot Test và MockMvc\n\nSpring Boot Test hỗ trợ khởi tạo ngữ cảnh ứng dụng để kiểm tra các thành\nphần khi ho ạt động cùng nhau.",
+            "score": 0.5395120586000939,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1643,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 830,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 40
+            },
+            "rank": 2,
+            "evidence_hit": true
+          },
+          {
+            "chunk_id": "f499ab0e8722aa465cafa5694a90b7196d3b71e1f51169410ecd6b6b6518f407",
+            "text": "Các nghiệp vụ mượn, trả và thu phạt được ưu tiên kiểm thử vì liên quan trực\ntiếp đến tính chính xác của dữ liệu. Một lỗi trong các chức năng này có thể khiến\ntrạng thái bản sách không khớp với phiếu mượn hoặc ghi nhận khoản phạt nhiều lần.\n\n2.7 Giới thi ệu công c ụ kiểm thử tự động\nĐể kiểm tra chương trình, project s ử dụng kết hợp kiểm thử đơn vị và kiểm\nthử tích hợp. Kiểm thử đơn vị tập trung vào từng quy tắc nghiệp vụ; kiểm thử tích\nhợp kiểm tra sự phối hợp giữa các thành phần của ứng dụng.\n\n2.7.1 Framework JUnit 5\nJUnit 5 được sử dụng để xây dựng và thực thi các phương thức kiểm thử tự\nđộng.\n\nTrong project, các phép kiểm tra được sử dụng gồm:\n\n assertEquals: đối chiếu kết quả thực tế với giá trị mong đợi.\n\n assertTrue: xác nhận một điều kiện phải đúng.\n\n assertNotNull: xác nhận đối tượng cần thiết đã được tạo.",
+            "score": 0.5336490337722446,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 828,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 0,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 40
+            },
+            "rank": 3,
+            "evidence_hit": false
+          }
+        ],
+        "hit1": false,
+        "hit3": true,
+        "strategy": "B",
+        "applied_filter": {}
+      },
+      {
+        "question_id": "q16",
+        "split": "test",
+        "question": "Trong Chương 2, Mockito giả lập thành phần nào của LoanServiceTest và giúp tạo các tình huống gì mà không cần MySQL?",
+        "expected_answer": "Giả lập Repository để thử độc giả bị khóa, sách đang mượn hoặc khoản phạt đã thanh toán mà không cần kết nối MySQL.",
+        "gold": [
+          {
+            "source_id": "do-an-ca-nhan",
+            "page": 40,
+            "evidence_quote": "Mockito được sử dụng để giả lập các Repository trong nhóm ki ểm thử\nLoanServiceTest. Nh ờ đó, có th ể thiết lập những tình huống như độc giả bị khóa, sách\nđang được mượn hoặc khoản phạt đã thanh toán mà không cần kết nối MySQL."
+          }
+        ],
+        "requested_filter": {
+          "category": "chuong_2"
+        },
+        "hits": [
+          {
+            "chunk_id": "5059b80d6ff7ec186cf3eca230f919abc58c95ade12bb4c27d5f6d8e385f8315",
+            "text": " Kết quả kiểm thử tự động không thay th ế việc xác nh ận ứng dụng chạy thành\ncông trên môi trư ờng tri ển khai th ực tế.\nDo đó, trư ớc khi đưa h ệ thống vào sử dụng, cần hoàn thiện cấu hình MySQL\nvà thực hiện thêm các kịch bản kiểm thử trên môi trường gần với vận hành.\n\n2.9 Kết quả kiểm thử và tình tr ạng triển khai\n\nTheo t ệp TEST_RESULTS.md đi kèm mã ngu ồn, bộ kiểm thử đã ghi nh ận 25\ntrường hợp đạt, không có thất bại, lỗi hoặc bỏ qua. Kết quả gồm 6 kiểm thử tính phạt,\n8 kiểm thử LoanService, 10 kiểm thử API và 1 kiểm thử rollback. Đây là k ết quả của\nmôi trường kiểm thử trong gói mã nguồn, không đồng nghĩa ứng dụng đã khởi động\nthành công trên mọi máy.",
+            "score": 0.5414792666477604,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 665,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 0,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 49
+            },
+            "rank": 1,
+            "evidence_hit": false
+          },
+          {
+            "chunk_id": "56f2b600191b45aa56dfaca693c3a92c8690c2c2bc8303495dde520a1b2aba4d",
+            "text": " assertThrows: xác nhận chương trình phát sinh ngoại lệ đối với đầu vào hoặc\nthao tác không hợp lệ.\nVí dụ, kiểm thử tính phạt xác nhận rằng trả chậm ba ngày với mức phạt 5.000\nđồng/ngày phải tạo ra khoản phạt 15.000 đồng.\n\n2.7.2 Thư viện Mockito\n\nMockito được sử dụng để giả lập các Repository trong nhóm ki ểm thử\nLoanServiceTest. Nh ờ đó, có th ể thiết lập những tình huống như độc giả bị khóa, sách\nđang được mượn hoặc khoản phạt đã thanh toán mà không cần kết nối MySQL.\nNgoài giả lập dữ liệu trả về, Mockito còn kiểm tra tương tác giữa Service và\nRepository. Chẳng hạn, khi bản sách không đủ điều kiện cho mượn, kiểm thử xác\nnhận phương thức lưu phiếu không được gọi.\n\n2.7.3 Spring Boot Test và MockMvc\n\nSpring Boot Test hỗ trợ khởi tạo ngữ cảnh ứng dụng để kiểm tra các thành\nphần khi ho ạt động cùng nhau.",
+            "score": 0.5395120586000939,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 1643,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 830,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 40
+            },
+            "rank": 2,
+            "evidence_hit": true
+          },
+          {
+            "chunk_id": "f499ab0e8722aa465cafa5694a90b7196d3b71e1f51169410ecd6b6b6518f407",
+            "text": "Các nghiệp vụ mượn, trả và thu phạt được ưu tiên kiểm thử vì liên quan trực\ntiếp đến tính chính xác của dữ liệu. Một lỗi trong các chức năng này có thể khiến\ntrạng thái bản sách không khớp với phiếu mượn hoặc ghi nhận khoản phạt nhiều lần.\n\n2.7 Giới thi ệu công c ụ kiểm thử tự động\nĐể kiểm tra chương trình, project s ử dụng kết hợp kiểm thử đơn vị và kiểm\nthử tích hợp. Kiểm thử đơn vị tập trung vào từng quy tắc nghiệp vụ; kiểm thử tích\nhợp kiểm tra sự phối hợp giữa các thành phần của ứng dụng.\n\n2.7.1 Framework JUnit 5\nJUnit 5 được sử dụng để xây dựng và thực thi các phương thức kiểm thử tự\nđộng.\n\nTrong project, các phép kiểm tra được sử dụng gồm:\n\n assertEquals: đối chiếu kết quả thực tế với giá trị mong đợi.\n\n assertTrue: xác nhận một điều kiện phải đúng.\n\n assertNotNull: xác nhận đối tượng cần thiết đã được tạo.",
+            "score": 0.5336490337722446,
+            "metadata": {
+              "section": "Chương 2 - Nội dung thực tập",
+              "category": "chuong_2",
+              "char_end": 828,
+              "chunking": "paragraph",
+              "language": "vi",
+              "char_start": 0,
+              "document_id": "do-an-ca-nhan",
+              "source": "bao_cao.pdf",
+              "page": 40
+            },
+            "rank": 3,
+            "evidence_hit": false
+          }
+        ],
+        "hit1": false,
+        "hit3": true,
+        "strategy": "C",
+        "applied_filter": {
+          "category": "chuong_2"
+        }
+      }
+    ]
+  }
+]

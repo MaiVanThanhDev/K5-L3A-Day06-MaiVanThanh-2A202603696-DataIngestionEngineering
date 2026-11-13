@@ -1,0 +1,54 @@
+{
+  "checked_at_utc": "2026-11-13T11:14:34.952681+00:00",
+  "docker_engine": "29.9.3",
+  "docker_desktop": "4.99.0",
+  "python": "3.12.16",
+  "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+  "pgvector": "0.8.7",
+  "unit_tests_passed": 16,
+  "validation_fingerprint": "485ff0a90e87d66099a61edc94babe223e0dc2bfd4218750c47298f6a57095a5",
+  "dev_completed": true,
+  "test_completed": true,
+  "same_model_files": true,
+  "same_experiment_fingerprint": true,
+  "unfiltered_B_C_identical": true,
+  "unfiltered_questions_checked": 16,
+  "after_postgres_restart_counts": {
+    "A": 66,
+    "B": 69,
+    "C": 69
+  },
+  "live_store_verification": {
+    "vector_source": "existing strategy B embeddings; no mock vectors",
+    "checks": {
+      "initial_count": true,
+      "reingest_no_duplicates": true,
+      "metadata_filter": true,
+      "filter_value_parameterized": true,
+      "obsolete_chunks_removed": true,
+      "cosine_self_match": true
+    },
+    "passed": true
+  },
+  "manual_audit": "Author confirms manual review and finalization of all 90 labels; Codex assisted initial proposals and cross-checking",
+  "manual_audit_at_initial_check": "pending; no human labels inferred",
+  "audit_followup": {
+    "checked_at_utc": "2026-11-13T12:15:48.516002+00:00",
+    "reviewer": "Mai Văn Thanh",
+    "review_method": "results/audit/review_method.json",
+    "labels": 90,
+    "author_confirmation": "confirmed",
+    "retrieval_results_unchanged": true,
+    "initial_label_reviewer": "Codex (AI hỗ trợ)",
+    "reviewer_attribution_updated_at_utc": "2026-11-13T12:19:15.127879+00:00",
+    "author_confirmation_record": {
+      "status": "confirmed",
+      "recorded_at_utc": "2026-11-13T12:25:39.073868+00:00",
+      "reported_by": "Mai Văn Thanh",
+      "author_statement": "đã chốt lại đủ 90 bộ",
+      "records": 90,
+      "scope": "Author confirms manual review and finalization of all 30 coherence, 45 metadata and 15 grounding labels",
+      "ai_support": "Codex assisted initial proposals/revisions and evidence cross-checking"
+    }
+  }
+}

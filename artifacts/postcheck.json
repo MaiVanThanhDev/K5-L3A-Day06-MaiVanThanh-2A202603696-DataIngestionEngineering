@@ -1,0 +1,189 @@
+{
+  "checked_at_utc": "2026-11-13T12:43:28.877335+00:00",
+  "method": "Read-only recomputation of saved inputs/chunks/traces; no test rerun or gold edits",
+  "fingerprint": "485ff0a90e87d66099a61edc94babe223e0dc2bfd4218750c47298f6a57095a5",
+  "checks": {
+    "frozen_inputs_unchanged": true,
+    "chunks_A_reproduced": true,
+    "chunks_B_reproduced": true,
+    "chunks_C_reproduced": true,
+    "dev_trace_coverage": true,
+    "dev_metrics_recomputed": true,
+    "dev_evidence_and_provenance": true,
+    "dev_frozen_run": true,
+    "test_trace_coverage": true,
+    "test_metrics_recomputed": true,
+    "test_evidence_and_provenance": true,
+    "test_frozen_run": true,
+    "unfiltered_B_C_identical": true,
+    "same_model_files": true,
+    "selection_precedes_test": true,
+    "selection_matches_dev_policy": true
+  },
+  "passed": true,
+  "audit_labels": {
+    "coherence": {
+      "completed": 30,
+      "total": 30
+    },
+    "metadata": {
+      "completed": 45,
+      "total": 45
+    },
+    "grounding": {
+      "completed": 15,
+      "total": 15
+    }
+  },
+  "cleanup": {
+    "removed_added_files": [
+      "artifacts/compile.log",
+      "artifacts/corpus_rebuild.log",
+      "artifacts/unit_tests.log",
+      "artifacts/validation.log",
+      "artifacts/verification.json",
+      "benchmark/questions.template.jsonl",
+      "data/sections.template.csv",
+      "starter/scripts/inspect_docx.py",
+      "data/private/docx_inspection.json",
+      "HUONG_DAN_CHAY.md",
+      "VIEC_BAN_CAN_LAM.md"
+    ],
+    "original_files_deleted": [],
+    "retained": "Original assignment files, source PDF, corpus, measured results, model cache and offline wheels"
+  },
+  "ui_verification": {
+    "checked_at_utc": "2026-11-13T11:52:28.489503+00:00",
+    "unit_tests_host": 23,
+    "unit_tests_docker": 23,
+    "browser": "Chrome headless; desktop 1440px and mobile 390px",
+    "browser_checks": {
+      "loaded": true,
+      "no_horizontal_overflow_desktop": true,
+      "chunk_search": true,
+      "chunk_empty": true,
+      "trace_top_three": true,
+      "audit_form": true,
+      "metadata_filter": true,
+      "grounding": true,
+      "no_horizontal_overflow_mobile": true,
+      "no_js_exceptions": true,
+      "browser_save_coherence": true,
+      "browser_save_metadata": true,
+      "browser_save_grounding": true,
+      "saved_after_reload": true,
+      "real_labels_untouched": true
+    },
+    "browser_exceptions": [],
+    "write_test_scope": "Temporary copy only; no labels saved into submission",
+    "database_counts_after_changes": {
+      "A": 66,
+      "B": 69,
+      "C": 69
+    },
+    "source_sha256": {
+      "ui\\server.py": "8719869c98ec4466d257563f188fea264776601338766bcfb4c3c0f24cf9cada",
+      "ui\\dist\\app.js": "b484a99a48cc29c747ade91ca1c15bdce8251a76a0bda11cae4ce98d25139507",
+      "ui\\dist\\index.html": "6ec0f8d32f37260d35389da2cce516c39c4ab4406028bb7269639bf14a718df5",
+      "ui\\dist\\style.css": "2f0fc64fb7d9fb623bf8ce94776fd59a0ffc48c8fb87e039b3fef77c28fc5621",
+      "starter\\scripts\\summarize_audit.py": "eb0171d1c0c67be3d7541a3470e409438420f0bc85800a27cb80b4df8831dd0e",
+      "starter\\tests\\test_ui.py": "e1534661c5246515ac59b61a9fe873f41bfc979a11c4cc3b5a1f88382ec75688"
+    }
+  },
+  "audit_verification": {
+    "checked_at_utc": "2026-11-13T12:15:48.516002+00:00",
+    "valid_labels": 90,
+    "coherence_scores_changed": 11,
+    "original_author_labels_preserved": true,
+    "frozen_inputs_unchanged": true,
+    "ui_data_loads_completed_90": true,
+    "unit_tests_host_after_audit_changes": 23,
+    "reviewer": "Codex (AI hỗ trợ)",
+    "author_confirmation": "confirmed",
+    "code_sha256": {
+      "starter\\scripts\\summarize_audit.py": "267223fb29fdf8f6d58f0dc5f6aece1e92935573948b6f1afaac524d501e7e37",
+      "starter\\scripts\\postcheck.py": "0bfb80c2f1968dfab3b981302af10663e51ef21568f982169f82d42126dd85be"
+    },
+    "author_confirmation_record": {
+      "status": "confirmed",
+      "recorded_at_utc": "2026-11-13T12:25:39.073868+00:00",
+      "reported_by": "Mai Văn Thanh",
+      "author_statement": "đã chốt lại đủ 90 bộ",
+      "records": 90,
+      "scope": "Author confirms manual review and finalization of all 30 coherence, 45 metadata and 15 grounding labels",
+      "ai_support": "Codex assisted initial proposals/revisions and evidence cross-checking"
+    }
+  },
+  "reviewer_attribution": {
+    "updated_at_utc": "2026-11-13T12:19:15.127879+00:00",
+    "requested_by": "author",
+    "reviewer": "Mai Văn Thanh",
+    "ai_support": "Codex proposed and revised scores/reasons; original method and evidence preserved",
+    "scores_and_reasons_changed": false
+  },
+  "author_confirmation_record": {
+    "status": "confirmed",
+    "recorded_at_utc": "2026-11-13T12:25:39.073868+00:00",
+    "reported_by": "Mai Văn Thanh",
+    "author_statement": "đã chốt lại đủ 90 bộ",
+    "records": 90,
+    "scope": "Author confirms manual review and finalization of all 30 coherence, 45 metadata and 15 grounding labels",
+    "ai_support": "Codex assisted initial proposals/revisions and evidence cross-checking"
+  },
+  "sharing_permission_confirmation": {
+    "status": "confirmed_by_author",
+    "recorded_at_utc": "2026-11-13T12:43:09.984816+00:00",
+    "confirmed_by": "Mai Văn Thanh",
+    "author_statement": "được cho phép chia sẻ tài liệu",
+    "scope": "Sharing the supplied report for LAB6 submission; no additional open-source license assigned"
+  },
+  "full_verification": {
+    "checked_at_utc": "2026-11-13T12:39:39.618137+00:00",
+    "unit_tests_host_passed": 23,
+    "saved_experiment_postchecks_passed": 16,
+    "postgres_status": "running and healthy (checked live)",
+    "live_database_counts": {
+      "A": 66,
+      "B": 69,
+      "C": 69
+    },
+    "live_database_vector_dimensions": 384,
+    "actual_model_cache_hashes_verified": true,
+    "original_pdf_hash_verified": true,
+    "original_readme_preserved": true,
+    "original_files_deleted": [],
+    "manual_labels_complete": 90,
+    "author_confirmation": "confirmed",
+    "audit_metrics_match_report": true,
+    "ui_http_checks": "Passed in host unit suite: page/data loading, private path isolation, write origin and host checks",
+    "javascript_syntax": "passed",
+    "documentation_broken_links": [],
+    "secret_pattern_scan": {
+      "files_scanned": 94,
+      "findings": 0,
+      "scope": "Common API token and private-key signatures in tracked and nonignored files; not a proof of unrestricted sharing rights"
+    },
+    "fixed_during_review": [
+      "Preserved author confirmation and audit provenance when rerunning postcheck CLI",
+      "Removed obsolete README-sync wording and corrected report punctuation"
+    ],
+    "remaining_author_actions": [
+      "Resolve pending benchmark author review and optional equivalent-evidence candidate q01 without changing frozen metrics silently",
+      "Finalize commit in STUDENT.md, push and submit the repository link using class instructions"
+    ],
+    "source_sha256": {
+      "starter\\scripts\\postcheck.py": "1ed562441a4ee6a831c5aea499d291757af8e8ae97fea44ecfbb5921550c1659",
+      "starter\\scripts\\summarize_audit.py": "93fb9eb9c31aa7712c339c73319c781990f85dda781098b71da0812be5023a61",
+      "ui\\server.py": "8719869c98ec4466d257563f188fea264776601338766bcfb4c3c0f24cf9cada",
+      "ui\\dist\\app.js": "7c8853aae39f74625d9dbb4f74dfa5f9b17f562e49f74a15b03a3e71b8217f20",
+      "starter\\tests\\test_ui.py": "84ec72495d85b22fcb14c325daf7b5cfaa201ae5bf67298e28ba670a19f7b351"
+    },
+    "sharing_permission_confirmation": {
+      "status": "confirmed_by_author",
+      "recorded_at_utc": "2026-11-13T12:43:09.984816+00:00",
+      "confirmed_by": "Mai Văn Thanh",
+      "author_statement": "được cho phép chia sẻ tài liệu",
+      "scope": "Sharing the supplied report for LAB6 submission; no additional open-source license assigned"
+    }
+  }
+}

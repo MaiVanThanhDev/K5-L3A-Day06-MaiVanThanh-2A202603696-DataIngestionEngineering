@@ -1,0 +1,56 @@
+{
+  "A": {
+    "reviewer_counts": {
+      "Mai Văn Thanh": 30
+    },
+    "coherence_n": 10,
+    "coherence_mean_2": 1.1,
+    "metadata_correct_n": 15,
+    "metadata_total": 15,
+    "filter_compliant_n": 1,
+    "filter_questions_n": 2,
+    "grounding_n": 5,
+    "grounding_mean_2": 1.2,
+    "grounding_counts": {
+      "0": 2,
+      "1": 0,
+      "2": 3
+    }
+  },
+  "B": {
+    "reviewer_counts": {
+      "Mai Văn Thanh": 30
+    },
+    "coherence_n": 10,
+    "coherence_mean_2": 1.9,
+    "metadata_correct_n": 15,
+    "metadata_total": 15,
+    "filter_compliant_n": 1,
+    "filter_questions_n": 2,
+    "grounding_n": 5,
+    "grounding_mean_2": 2,
+    "grounding_counts": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    }
+  },
+  "C": {
+    "reviewer_counts": {
+      "Mai Văn Thanh": 30
+    },
+    "coherence_n": 10,
+    "coherence_mean_2": 1.9,
+    "metadata_correct_n": 15,
+    "metadata_total": 15,
+    "filter_compliant_n": 2,
+    "filter_questions_n": 2,
+    "grounding_n": 5,
+    "grounding_mean_2": 2,
+    "grounding_counts": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    }
+  }
+}

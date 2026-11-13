@@ -1,0 +1,7 @@
+{
+  "selected_strategy": "C",
+  "fingerprint": "485ff0a90e87d66099a61edc94babe223e0dc2bfd4218750c47298f6a57095a5",
+  "model_signature": "4ad1c4273905092967aecc6a3ca1f6090c5726281084a99cfb36f0021368b9df",
+  "selection_policy": "Choose on dev only: highest Evidence Hit@3, then Hit@1, then fewer chunks, then strategy name. Human grounding is reported on test, never used to tune.",
+  "frozen_at_utc": "2026-11-13T11:08:42.139447+00:00"
+}

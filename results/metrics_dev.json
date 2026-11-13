@@ -1,0 +1,29 @@
+{
+  "A/dev": {
+    "strategy": "A",
+    "split": "dev",
+    "questions": 15,
+    "hit1_n": 6,
+    "hit1": 0.4,
+    "hit3_n": 8,
+    "hit3": 0.5333333333333333
+  },
+  "B/dev": {
+    "strategy": "B",
+    "split": "dev",
+    "questions": 15,
+    "hit1_n": 7,
+    "hit1": 0.4666666666666667,
+    "hit3_n": 9,
+    "hit3": 0.6
+  },
+  "C/dev": {
+    "strategy": "C",
+    "split": "dev",
+    "questions": 15,
+    "hit1_n": 7,
+    "hit1": 0.4666666666666667,
+    "hit3_n": 10,
+    "hit3": 0.6666666666666666
+  }
+}

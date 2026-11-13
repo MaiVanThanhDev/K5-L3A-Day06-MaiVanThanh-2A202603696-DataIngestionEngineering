@@ -1,0 +1,11 @@
+{
+  "pdf": "data/private/bao_cao.pdf",
+  "source_id": "do-an-ca-nhan",
+  "title": "Báo cáo thực tập doanh nghiệp: Xây dựng hệ thống RESTful API quản lý thư viện trường học sử dụng Java Spring Boot và Clean Architecture",
+  "permission": "Tài liệu do học viên cung cấp; Mai Văn Thanh xác nhận ngày 13/11/2026 được phép chia sẻ tài liệu phục vụ bài nộp LAB6. Không khai báo giấy phép mở riêng.",
+  "pages": "16-23,28-51",
+  "sections": "data/sections.csv",
+  "header_pattern": "Báo cáo thực tập doanh nghiệp ngành Công nghệ thông tin",
+  "footer_pattern": "Mai Văn Thanh \\d+ Lớp Tịn Học Kinh Tế B",
+  "language": "vi"
+}

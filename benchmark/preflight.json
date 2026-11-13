@@ -1,0 +1,16 @@
+{
+  "questions": 20,
+  "dev": 15,
+  "test": 5,
+  "filter_questions": [
+    "q01",
+    "q12",
+    "q16",
+    "q20"
+  ],
+  "evidence_presence_checked": true,
+  "retrieval_has_run": true,
+  "author_review": "pending",
+  "note": "AI drafted questions from supplied report; author must check answer sufficiency. Source contains extraction spacing artifacts.",
+  "frozen_selection": "results/selection.json"
+}

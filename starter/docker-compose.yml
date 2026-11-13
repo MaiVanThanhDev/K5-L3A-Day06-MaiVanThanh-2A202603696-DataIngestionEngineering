@@ -15,5 +15,18 @@ services:
       interval: 3s
       timeout: 3s
       retries: 30
+  pipeline:
+    profiles: ["tools"]
+    build:
+      context: ..
+      dockerfile: starter/Dockerfile
+    working_dir: /workspace/starter
+    environment:
+      DATABASE_URL: postgresql://day6:day6_local_only@postgres:5432/day6_lab
+    volumes:
+      - ..:/workspace
+    depends_on:
+      postgres:
+        condition: service_healthy
 volumes:
   pg_data:

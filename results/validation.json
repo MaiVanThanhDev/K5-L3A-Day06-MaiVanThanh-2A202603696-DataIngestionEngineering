@@ -1,0 +1,10 @@
+{
+  "content_pages": 32,
+  "questions": 20,
+  "fingerprint": "485ff0a90e87d66099a61edc94babe223e0dc2bfd4218750c47298f6a57095a5",
+  "chunk_counts": {
+    "A": 66,
+    "B": 69,
+    "C": 69
+  }
+}

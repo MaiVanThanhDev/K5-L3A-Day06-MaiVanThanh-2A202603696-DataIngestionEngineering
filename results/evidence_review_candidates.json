@@ -1,0 +1,32 @@
+{
+  "status": "author confirmation pending; original frozen metrics unchanged",
+  "question_id": "q01",
+  "split": "dev",
+  "strategy": "A",
+  "candidate_hit": {
+    "chunk_id": "a20759ae0029576b06526810370526b7f72964aec57ebbfd6ff42266fd625fe0",
+    "text": "đầu sách và bản sách. Đầu sách\nchứa thông tin chung như tên sách, tác giả, thể loại và nhà xuất bản. Bản sách là từng\ncuốn sách cụ thể, có mã riêng và tình trạng sử dụng riêng.\nĐối với nghiệp vụ mượn sách, th ủ thư cần kiểm tra thông tin đ ộc giả, điều kiện\nmượn và tình tr ạng bản sách trư ớc khi lập phiếu. Khi tr ả sách, th ủ thư đ ối chiếu thông\ntin mượn, ghi nh ận ngày tr ả và kiểm tra tình tr ạng thực tế của sách.\n\nCác trư ờng hợp trả quá hạn, mất sách ho ặc hư h ỏng cần được ghi nh ận để xử\nlý theo quy đ ịnh. Những quy đ ịnh chưa đư ợc xác đ ịnh cụ thể được tổng hợp để tiếp\ntục trao đổi với người hướng dẫn.\n\n2.3.2 Mô tả bài toán bằng lời.\n\nThư viện cần xây dựng một hệ thống hỗ trợ quản lý tập trung thông tin sách,\nđộc giả và hoạt động mư ợn – trả. Hệ thống giúp người sử dụng tra cứu nhanh, cập\nnhật tình trạng sách và theo dõi lịch sử mượn – trả.\n\nMỗi đầu sách có thể có nhiều bản sác",
+    "score": 0.4699145064695516,
+    "metadata": {
+      "section": "Chương 2 - Nội dung thực tập",
+      "category": "chuong_2",
+      "char_end": 1710,
+      "chunking": "fixed",
+      "language": "vi",
+      "char_start": 810,
+      "document_id": "do-an-ca-nhan",
+      "source": "bao_cao.pdf",
+      "page": 20
+    },
+    "rank": 1,
+    "evidence_hit": false
+  },
+  "registered_gold": [
+    {
+      "source_id": "do-an-ca-nhan",
+      "page": 28,
+      "evidence_quote": "Em tiếp tục phân biệt đầu sách và bản sách. Thông tin chung được lưu ở đầu\nsách, còn mã từng cuốn, vị trí và tình trạng được lưu ở bản sách. Cách tổ chức này\ngiúp theo dõi chính xác từng cuốn trong quá trình cho mượn."
+    }
+  ],
+  "reason": "Page 20 contains related title/copy information; author must check whether it is sufficient/equivalent to registered page 28 evidence. Do not silently relabel after test."
+}

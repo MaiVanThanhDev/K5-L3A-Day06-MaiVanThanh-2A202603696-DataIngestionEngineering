@@ -1,0 +1,24 @@
+{
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "selection_policy": "Choose on dev only: highest Evidence Hit@3, then Hit@1, then fewer chunks, then strategy name. Human grounding is reported on test, never used to tune.",
+  "strategies": {
+    "A": {
+      "chunking": "fixed",
+      "size": 900,
+      "overlap": 90,
+      "use_filter": false
+    },
+    "B": {
+      "chunking": "paragraph",
+      "size": 900,
+      "overlap": 0,
+      "use_filter": false
+    },
+    "C": {
+      "chunking": "paragraph",
+      "size": 900,
+      "overlap": 0,
+      "use_filter": true
+    }
+  }
+}

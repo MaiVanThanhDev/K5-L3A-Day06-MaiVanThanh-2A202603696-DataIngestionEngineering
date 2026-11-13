@@ -1,0 +1,29 @@
+{
+  "A/test": {
+    "strategy": "A",
+    "split": "test",
+    "questions": 5,
+    "hit1_n": 2,
+    "hit1": 0.4,
+    "hit3_n": 2,
+    "hit3": 0.4
+  },
+  "B/test": {
+    "strategy": "B",
+    "split": "test",
+    "questions": 5,
+    "hit1_n": 3,
+    "hit1": 0.6,
+    "hit3_n": 5,
+    "hit3": 1.0
+  },
+  "C/test": {
+    "strategy": "C",
+    "split": "test",
+    "questions": 5,
+    "hit1_n": 3,
+    "hit1": 0.6,
+    "hit3_n": 5,
+    "hit3": 1.0
+  }
+}

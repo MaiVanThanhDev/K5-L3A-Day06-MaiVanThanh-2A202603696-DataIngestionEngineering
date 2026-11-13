@@ -1,0 +1,12 @@
+{
+  "vector_source": "existing strategy B embeddings; no mock vectors",
+  "checks": {
+    "initial_count": true,
+    "reingest_no_duplicates": true,
+    "metadata_filter": true,
+    "filter_value_parameterized": true,
+    "obsolete_chunks_removed": true,
+    "cosine_self_match": true
+  },
+  "passed": true
+}
